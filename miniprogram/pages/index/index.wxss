@@ -1,0 +1,7 @@
+/* miniprogram/pages/index/index.wxss */
+.a{
+  display: flex;
+  position: relative;
+  justify-content: center;  
+  align-items: center;
+}

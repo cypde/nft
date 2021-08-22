@@ -1,0 +1,9 @@
+
+<view 
+  style="position: relative; width: 725rpx; background: white; min-height: 100px; height: 229rpx; display: block; box-sizing: border-box; left: 0rpx; top: 0rpx" wx:for="{{list}}">
+  <view
+    style="position: relative; width: 665rpx; background: white; left: 28rpx; top: 46rpx; height: 64rpx; display: block; box-sizing: border-box">
+    存证Hash：(校验时间:{{item.date}})</view>
+  <text style="position: relative; width: 698rpx; background: white; left: 28rpx; top: 46rpx; height: 100rpx; display: block; box-sizing: border-box; word-break: break-all" selectable="true" >{{item.info.evHash}}</text>
+</view>
+<view class="loading" >~共有{{list.length}}条</view>

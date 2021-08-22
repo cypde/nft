@@ -1,0 +1,40 @@
+<view class="index_swiper">
+    <swiper autoplay indicator-dots circular>
+      <swiper-item
+      wx:for="{{swiperList}}"
+      wx:key=""
+      >
+        <navigator url="{{item.navigator_url}}">
+          <image mode="widthFix" src="{{item}}"></image>
+        </navigator>
+      </swiper-item>
+    </swiper>
+</view>
+<view style=" height: 60vh;padding-top: 8px;">
+  <!-- <van-card
+  price="点击进入"
+  desc="“至信链可信存证服务”是腾讯公司联合生态伙伴北京枫调理顺科技发展有限公司发布的可信存证区块链服务，基于国产开源自主可控的“长安链”技术底层建设，已有十余家社会各界公信力机构作为节点加入。"
+  title="至信链存证NFT真伪查询"
+  currency=""
+  thumb="https://www.zxinchain.com/favicon.ico"
+  bindtap='into'
+/> -->
+
+<i-card bindtap='into' title="幻核NFT" extra="点击进入NFT真伪查询" thumb="https://www.zxinchain.com/favicon.ico">
+    <view slot="content">
+        快速查询、校验电子证据
+    </view>
+    <view slot="footer">NFT（ Non-Fungible Token，非同质化权益证明 )，在区块链技术
+支持下，可对数字艺术、门票等任何种类的数字商品进行确权。
+一件数字商品通过NFT手段加密后，便拥有了一张专属于自己的
+“数字证书”，这个独特标示同时被永久存储在区块链上，具有唯
+一性和不可分割性，且无法被复制和随意篡改。因此，NFT代表
+的数字资产是稀缺的，可承载独特的价值。
+幻核数字商品是基于「至信链」NFT技术协议发行的数字商品。
+每个数字商品在「至信链」都有链上唯一标识，且不可篡改。
+「至信链」为数字商品的发行交易提供区块链底层技术支持，为
+本平台提供可信存证技术、数字商品凭证技术服务。在幻核，你
+可以成为任何次元的收藏家或创作者，拥有全新文化选择自由。如需了解最新消息，请微信搜索"幻核"公众号。
+</view>
+</i-card>
+</view>

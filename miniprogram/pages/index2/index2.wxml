@@ -1,0 +1,32 @@
+<!--mine.wxml-->
+<view >
+  <view class="user_info_wrap">
+  <view wx:if="{{!hasUserInfo}}" class="user_img_wrap">
+    <image class="user_bg" src="{{userinfo.avatarUrl}}"  style="width: 754rpx; height: 520rpx; display: inline-block; box-sizing: border-box; left: NaNrpx; top: NaNrpx"></image>
+    <view class="user_info">
+      <image class="user_icon" src="{{userinfo.avatarUrl}}"></image>
+      <view class="user_name">{{userinfo.nickName}}</view>
+    </view>
+  </view>
+  <view wx:if="{{hasUserInfo}}" class="user_btn">
+    <navigator bindtap="getUserProfile" >点击登录</navigator>
+  </view>
+</view>
+  <view class="zan-panel">
+    <view class="zan-cell zan-cell--access" wx:for="{{ items }}" wx:key="" data-path="{{ item.path }}" data-index="{{ index }}"bindtap="navigateTo" style="position: relative; left: -8rpx; top: 28rpx">
+      <view class="zan-cell__bd" style="width: 696rpx; height: 82rpx; display: block; box-sizing: border-box; left: NaNrpx; top: NaNrpx">
+          <image src="{{item.icon}}" class="img"></image>
+          <text>{{ item.text }}</text>
+      </view>
+    </view>
+  </view>
+  
+  <view class="zan-panel">
+    <view class="zan-cell zan-cell--access"  bindtap="logout" style="position: relative; left: -8rpx; top: -4rpx">
+      <view class="zan-cell__bd" style="width: 696rpx; height: 80rpx; display: block; box-sizing: border-box; left: NaNrpx; top: NaNrpx">
+          <image src="../../images/mine/logout.png" class="img"></image>
+          退出登录
+      </view>
+    </view>
+  </view>
+</view>

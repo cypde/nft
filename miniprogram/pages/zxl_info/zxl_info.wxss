@@ -1,0 +1,13 @@
+/* miniprogram/pages/zxl_info/zxl_info.wxss */
+.loading {
+  display: flex;
+  justify-content: center; 
+  align-items:center;  
+    height: 40px;
+    bottom: 7rpx;
+    color: grey;
+    font-size: 14px;
+    font-family: cursive;
+    font-style: oblique;
+    font-weight: lighter;
+  }

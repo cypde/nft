@@ -1,0 +1,65 @@
+<!-- <van-notice-bar
+  left-icon="volume-o"
+  text="可输入存证ID、存证Hash、交易Hash值对存证证据进行查验(*仅支持查询存证类业务数据)"
+/> -->
+<i-notice-bar icon="systemprompt" loop background-color="white" color="black">
+  可输入存证ID、存证Hash、交易Hash值对存证证据进行查验(*仅支持查询存证类业务数据)校验接口采用至信链官网开放的接口。
+</i-notice-bar>
+<view style="padding-left:14px;padding-top:20px;padding-bottom:14px">
+数据来源于‘至信链’官网
+</view>
+<van-cell-group>
+  <van-field
+    label=""
+    type="textarea"
+    placeholder="请输入存证ID、存证Hash、交易Hash值对存证证据进行查验"
+    autosize
+    bind:input="messageInput"
+    data-value="value"
+    clearable
+  />
+</van-cell-group>
+<!-- <i-panel title="输入：">
+    <i-input placeholder="{{ message }}" bind:input="messageInput"/>
+</i-panel> -->
+<!-- <van-button square type="primary"  bindtap="check" style="width:300px;left:40%">1存证校验</van-button> -->
+<button style="color: black; width: 750rpx; height: 84rpx; display: block; box-sizing: border-box; left: -1rpx; top: 1rpx; padding-top: 10px; position: relative" bindtap="check" >存证校验</button>
+
+
+<view wx:if="{{ success }}">
+  <image src="../../images/duigou.jpg" class="img" style="width: 106rpx; height: 109rpx; display: flex; justify-content: center; position: relative; left: 323rpx; top: -1rpx; box-sizing: border-box" class="a"></image>
+  <view style="text-align: center; height: 82rpx; width: 750rpx; display: block; box-sizing: border-box; left: NaNrpx; padding-top: 8px;" >
+      校验通过，该证据自上链之日起未被篡改！
+  </view>
+  <view>
+    <van-cell title="上链时间："  label="{{rspData.createTime}}"type="textarea" />
+    <van-cell title="存证ID："  label="{{rspData.evId}}" />
+    <van-cell title="存证机构："  label="{{rspData.appId}}" />
+    <van-cell title="交易Hash："  label="{{rspData.txHash}}"style="word-break:break-all;" />
+    <van-cell title="区块高度："  label="{{rspData.blockHeight}}" />
+    <van-cell title="存证文件Hash：" label="{{rspData.evHash}}" style="word-break:break-all;"/>
+  </view>
+</view>
+
+<view wx:if="{{ fail }}">
+  <image src="../../images/fail.png" class="img" style="width: 165rpx; height: 109rpx; display: flex; justify-content: center; position: relative; left: 289rpx; top: 84rpx; box-sizing: border-box" class="a"></image>
+  <view style="text-align: center; height: 84rpx; width: 212rpx; display: flex; box-sizing: border-box; padding-top: 14px; top: 84rpx; left: 289rpx; position: relative" >
+      校验未通过！
+  </view>
+</view>
+
+<view wx:if="{{ info }}" style="width: 149rpx; height: 71rpx; display: block; box-sizing: border-box; left: 0rpx; top: -1rpx; position: relative">
+  <text style="position: relative; width: 173rpx; height: 51rpx; display: block; box-sizing: border-box; left: 316rpx; top: 24rpx">实时数据</text>
+
+  <view style="width: 750rpx; height: 51rpx; display: block; box-sizing: border-box; left: 0rpx; top: 58rpx; position: relative">
+    <text style="width: 135rpx; height: 39rpx; display: block; box-sizing: border-box; left: 20rpx; top: 2rpx; position: relative"selectable="true" >存证Hash</text>
+    <text style="width: 135rpx; height: 39rpx; box-sizing: border-box; left: 414rpx; top: -35rpx; position: relative">区块高度</text>
+    <text style="width: 135rpx; height: 40rpx; display: block; box-sizing: border-box; left: 569rpx; top: -77rpx; position: relative">上链时间</text>
+  </view>
+  <view style="width: 750rpx; height: 156rpx; display: block; box-sizing: border-box; left: -1rpx; top: 80rpx; position: relative" wx:for="{{infoList}}">
+    <text style="width: 379rpx; height: 40rpx; display: block; box-sizing: border-box; left: 20rpx; top: 2rpx; position: relative; word-break: break-all" selectable="true" >{{item.evHash}}</text>
+    <text style="width: 135rpx; height: 39rpx; box-sizing: border-box; left: 412rpx; top: -20rpx; position: relative">{{item.blockHeight}}</text>
+    <text style="width: 176rpx; height: 40rpx; display: block; box-sizing: border-box; left: 568rpx; top: -58rpx; position: relative">{{item.txTime}}</text>
+  </view>
+</view>
+

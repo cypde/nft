@@ -1,0 +1,12 @@
+{
+  "usingComponents": {
+    "van-field": "../../components/vant/dist/field/index",
+    "van-notice-bar": "../../components/vant/dist/notice-bar/index",
+    "van-button": "../../components/vant/dist/button/index",
+    "van-cell": "../../components/vant/dist/cell/index",
+    "i-collapse": "../../components/iviewui/dist/collapse/index",
+    "i-collapse-item": "../../components/iviewui/dist/collapse-item/index",
+    "i-notice-bar": "../../components/iviewui/dist/notice-bar/index",
+    "i-input": "../../components/iviewui/dist/input/index"
+  }
+}

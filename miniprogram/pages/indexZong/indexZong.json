@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "van-card": "../../components/vant/dist/card/index",
+    "i-card": "../../components/iviewui/dist/card/index"
+  }
+}

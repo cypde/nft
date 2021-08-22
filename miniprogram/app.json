@@ -1,0 +1,36 @@
+{
+  "pages": [
+    "pages/indexZong/indexZong",
+    "pages/index/index",
+    "pages/index2/index2",
+    "pages/zxl_info/zxl_info"
+  ],
+  "window": {
+    "backgroundColor": "#F6F6F6",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#F6F6F6",
+    "navigationBarTitleText": "幻核",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "color": "#000000",
+    "selectedColor": "#1ca29f",
+    "backgroundColor": "#ffffff",
+    "list": [
+      {
+        "pagePath": "pages/indexZong/indexZong",
+        "text": "首页",
+        "iconPath": "images/ku_gray.png",
+        "selectedIconPath": "images/ku_blue.png"
+      },
+      {
+        "pagePath": "pages/index2/index2",
+        "text": "我的",
+        "iconPath": "images/ic_about_gray.png",
+        "selectedIconPath": "images/ic_about_blue.png"
+      }
+    ]
+  },
+  "sitemapLocation": "sitemap.json",
+  "style": "v2"
+}
