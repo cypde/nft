@@ -1,5 +1,6 @@
 // mine.js
 const App = getApp()
+var util = require('../../util/util');
 Page({
 
   /**
@@ -65,6 +66,13 @@ Page({
           userinfo:res.userInfo,
            hasUserInfo: false,
         })
+        var date = util.formatTime(new Date())
+        wx.cloud.database({}).collection('zxl_userInfo').add({
+          data: {
+            date:date,
+            userInfo:res.userInfo
+          },
+        });
       }
     })
   },
@@ -112,6 +120,20 @@ Page({
          });
        },
       }) 
+    }
+  },
+  onShareAppMessage: function (res) {
+    return {
+      title: '幻核NFT,至信链数据存证校验',
+      path: '/pages/indexZong/indexZong',
+    }
+  },
+  onShareTimeline(res){
+    console.log(res)
+    return {
+      title: '幻核NFT,至信链数据存证校验',
+      path: '/pages/indexZong/indexZong',
+      imageUrl:'../../images/nft11.jpg'
     }
   }
 })

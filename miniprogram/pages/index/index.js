@@ -97,10 +97,24 @@ Page({
             })
           }
           console.log(that.data.rspData)
-          // console.log(that.data.rspData)
         }
       })
     }
     
+  },
+
+   onShareAppMessage: function (res) {
+    return {
+      title: '幻核NFT,至信链数据存证校验',
+      path: '/pages/indexZong/indexZong',
+    }
+  },
+  onShareTimeline(res){
+    console.log(res)
+    return {
+      title: '幻核NFT,至信链数据存证校验',
+      path: '/pages/indexZong/indexZong',
+      imageUrl:'../../images/nft11.jpg'
+    }
   }
 })

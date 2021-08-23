@@ -41,25 +41,28 @@
   </view>
 </view>
 
-<view wx:if="{{ fail }}">
+<view wx:if="{{ fail }}" style="width: 748rpx; height: 390rpx; display: block; box-sizing: border-box; left: NaNrpx; top: NaNrpx">
   <image src="../../images/fail.png" class="img" style="width: 165rpx; height: 109rpx; display: flex; justify-content: center; position: relative; left: 289rpx; top: 84rpx; box-sizing: border-box" class="a"></image>
   <view style="text-align: center; height: 84rpx; width: 212rpx; display: flex; box-sizing: border-box; padding-top: 14px; top: 84rpx; left: 289rpx; position: relative" >
       校验未通过！
   </view>
+  <text style="position: relative; left: 195rpx; top: 120rpx; width: 387rpx; height: 50rpx; display: block; box-sizing: border-box; color: gray">请等待官网数据更新后重试</text>
 </view>
 
 <view wx:if="{{ info }}" style="width: 149rpx; height: 71rpx; display: block; box-sizing: border-box; left: 0rpx; top: -1rpx; position: relative">
   <text style="position: relative; width: 173rpx; height: 51rpx; display: block; box-sizing: border-box; left: 316rpx; top: 24rpx">实时数据</text>
 
   <view style="width: 750rpx; height: 51rpx; display: block; box-sizing: border-box; left: 0rpx; top: 58rpx; position: relative">
-    <text style="width: 135rpx; height: 39rpx; display: block; box-sizing: border-box; left: 20rpx; top: 2rpx; position: relative"selectable="true" >存证Hash</text>
-    <text style="width: 135rpx; height: 39rpx; box-sizing: border-box; left: 414rpx; top: -35rpx; position: relative">区块高度</text>
-    <text style="width: 135rpx; height: 40rpx; display: block; box-sizing: border-box; left: 569rpx; top: -77rpx; position: relative">上链时间</text>
+    <text style="width: 336rpx; height: 38rpx; display: block; box-sizing: border-box; left: 18rpx; top: 0rpx; position: relative"selectable="true" >存证Hash(长按可复制)</text>
+    <text style="width: 135rpx; height: 39rpx; box-sizing: border-box; left: 393rpx; top: -38rpx; position: relative">区块高度</text>
+    <text style="width: 132rpx; height: 38rpx; display: block; box-sizing: border-box; left: 560rpx; top: -80rpx; position: relative">上链时间</text>
   </view>
-  <view style="width: 750rpx; height: 156rpx; display: block; box-sizing: border-box; left: -1rpx; top: 80rpx; position: relative" wx:for="{{infoList}}">
-    <text style="width: 379rpx; height: 40rpx; display: block; box-sizing: border-box; left: 20rpx; top: 2rpx; position: relative; word-break: break-all" selectable="true" >{{item.evHash}}</text>
-    <text style="width: 135rpx; height: 39rpx; box-sizing: border-box; left: 412rpx; top: -20rpx; position: relative">{{item.blockHeight}}</text>
-    <text style="width: 176rpx; height: 40rpx; display: block; box-sizing: border-box; left: 568rpx; top: -58rpx; position: relative">{{item.txTime}}</text>
+  <view style="width: 750rpx; height: 198rpx; display: block; box-sizing: border-box; left: -1rpx; top: 80rpx; position: relative" wx:for="{{infoList}}">
+    <text style="width: 358rpx; height: 40rpx; display: block; box-sizing: border-box; left: 20rpx; top: 2rpx; position: relative; word-break: break-all" selectable="true" >{{item.evHash}}</text>
+    <text style="width: 135rpx; height: 39rpx; box-sizing: border-box; left: 393rpx; top: -38rpx; position: relative; word-break: break-all">{{item.blockHeight}}</text>
+    <text style="width: 178rpx; height: 144rpx; display: block; box-sizing: border-box; left: 560rpx; top: -80rpx; position: relative">{{item.txTime}}</text>
   </view>
 </view>
+
+
 

@@ -10,7 +10,7 @@
       </swiper-item>
     </swiper>
 </view>
-<view style=" height: 60vh;padding-top: 8px;">
+<view style="height: 628rpx; padding-top: 8px; width: 750rpx; display: block; box-sizing: border-box; left: NaNrpx; top: NaNrpx">
   <!-- <van-card
   price="点击进入"
   desc="“至信链可信存证服务”是腾讯公司联合生态伙伴北京枫调理顺科技发展有限公司发布的可信存证区块链服务，基于国产开源自主可控的“长安链”技术底层建设，已有十余家社会各界公信力机构作为节点加入。"
@@ -38,3 +38,5 @@
 </view>
 </i-card>
 </view>
+<!-- <text style="position: relative; left: 178rpx; top: 44rpx; width: 394rpx; height: 42rpx; display: block; box-sizing: border-box;color:gray">其它NFT查询陆续开发中</text> -->
+
