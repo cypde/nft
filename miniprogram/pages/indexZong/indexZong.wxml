@@ -20,11 +20,11 @@
   bindtap='into'
 /> -->
 
-<i-card bindtap='into' title="幻核NFT" extra="点击进入NFT真伪查询" thumb="https://www.zxinchain.com/favicon.ico">
+<i-card bindtap='into' title="幻核" extra="点击进入查询" thumb="https://www.zxinchain.com/favicon.ico">
     <view slot="content">
         快速查询、校验电子证据
     </view>
-    <view slot="footer">NFT（ Non-Fungible Token，非同质化权益证明 )，在区块链技术
+    <!-- <view slot="footer">NFT（ Non-Fungible Token，非同质化权益证明 )，在区块链技术
 支持下，可对数字艺术、门票等任何种类的数字商品进行确权。
 一件数字商品通过NFT手段加密后，便拥有了一张专属于自己的
 “数字证书”，这个独特标示同时被永久存储在区块链上，具有唯
@@ -35,8 +35,21 @@
 「至信链」为数字商品的发行交易提供区块链底层技术支持，为
 本平台提供可信存证技术、数字商品凭证技术服务。在幻核，你
 可以成为任何次元的收藏家或创作者，拥有全新文化选择自由。如需了解最新消息，请微信搜索"幻核"公众号。
+</view> -->
+ <view slot="footer">在区块链技术
+支持下，可对数字艺术、门票等任何种类的数字商品进行确权。
+一件数字商品通过Non-Fungible Token手段加密后，便拥有了一张专属于自己的
+“数字证书”，这个独特标示同时被永久存储在区块链上，具有唯
+一性和不可分割性，且无法被复制和随意篡改。因此，Non-Fungible Token代表
+的数字资产是稀缺的，可承载独特的价值。
+幻核数字商品是基于「至信链」Non-Fungible Token技术协议发行的数字商品。
+每个数字商品在「至信链」都有链上唯一标识，且不可篡改。
+「至信链」为数字商品的发行交易提供区块链底层技术支持，为
+本平台提供可信存证技术、数字商品凭证技术服务。在幻核，你
+可以成为任何次元的收藏家或创作者，拥有全新文化选择自由。非官方小程序，如需了解最新消息，请微信搜索"幻核"公众号。
 </view>
 </i-card>
 </view>
+<ad unit-id="adunit-b534ba5415ab291f" ad-type="video" ad-theme="white"></ad>
 <!-- <text style="position: relative; left: 178rpx; top: 44rpx; width: 394rpx; height: 42rpx; display: block; box-sizing: border-box;color:gray">其它NFT查询陆续开发中</text> -->
 

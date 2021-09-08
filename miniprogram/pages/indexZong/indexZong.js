@@ -6,7 +6,9 @@ Page({
    * 页面的初始数据
    */
   data: {
-    swiperList: ["../../images/nft11.jpg","../../images/nft1.jpg"],
+    swiperList: ["../../images/nft11.jpg",
+    // "../../images/nft1.jpg"
+  ],
   },
 
   /**

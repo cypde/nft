@@ -5,9 +5,11 @@
 <i-notice-bar icon="systemprompt" loop background-color="white" color="black">
   可输入存证ID、存证Hash、交易Hash值对存证证据进行查验(*仅支持查询存证类业务数据)校验接口采用至信链官网开放的接口。
 </i-notice-bar>
+<ad unit-id="adunit-ed3fab1a8991a01d" ad-type="video" ad-theme="white"></ad>
 <view style="padding-left:14px;padding-top:20px;padding-bottom:14px">
-数据来源于‘至信链’官网
+数据来源于‘至信链’官网(校验须看广告)
 </view>
+
 <van-cell-group>
   <van-field
     label=""

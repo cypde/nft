@@ -1,4 +1,4 @@
-
+<ad unit-id="adunit-7a9d2b2853f9c6b9" ad-type="video" ad-theme="white"></ad>
 <view 
   style="position: relative; width: 725rpx; background: white; min-height: 100px; height: 229rpx; display: block; box-sizing: border-box; left: 0rpx; top: 0rpx" wx:for="{{list}}">
   <view
